@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+div{
+    height:50%;
+    width:50%;
+    border:2px solid black;
+    left:20%;
+    top:10%;
+    position:relative;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+    z-index: -1;
+}
+.inner{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(243, 241, 244);
+    z-index: 2;
+    top:0;
+    position: absolute;
+}
+    </style>
+</head>
+
+<body>
+    <div >
+        <video  autoplay loop muted src="./assests/video.mp4">
+        </video>
+        <div class="inner">
+        </div>
+    </div>
+    
+</body>
+</html>
